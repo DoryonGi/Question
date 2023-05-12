@@ -10,188 +10,36 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack(spacing: 18){
-            HStack(spacing: 24){
-                ZStack{
-                    Circle()
-                        .frame(width:78 ,height:78).foregroundColor(Color(UIColor.systemGray5))
-                    
-                    Text("1")
-                        .font(.system(size: 37))
-                    
+        TabView {
+            Text("즐겨찾기")
+                .tabItem {
+                    Label("즐겨찾기", systemImage: "star.fill")
                 }
-                ZStack{
-                    Circle()
-                        .frame(width:78 ,height:78).foregroundColor(Color(UIColor.systemGray5))
-                    VStack{
-                        Text("2")
-                            .font(.system(size: 37))
-                        Text("ABC")
-                            .font(.system(size: 10))
-                           
-                    }
+            Text("최근통화")
+                .tabItem {
+                    Label("최근통화", systemImage: "clock.fill")
                 }
-                ZStack{
-                    Circle()
-                        .frame(width:78 ,height:78).foregroundColor(Color(UIColor.systemGray5))
-                    VStack{
-                        Text("3")
-                            .font(.system(size: 37))
-                        Text("DEF")
-                            .font(.system(size: 10))
-                    }
+            Text("연락처")
+                .tabItem {
+                    Label("연락처", systemImage: "person.circle.fill")
                 }
-            }
-            VStack(spacing: 18){
-                HStack(spacing: 24){
-                    ZStack{
-                        Circle()
-                            .frame(width:78 ,height:78).foregroundColor(Color(UIColor.systemGray5))
-                        VStack{
-                            Text("4")
-                                .font(.system(size: 37))
-                            Text("GHI")
-                                .font(.system(size: 10))
-                        }
-                        
-                    }
-                    ZStack{
-                        Circle()
-                            .frame(width:78 ,height:78).foregroundColor(Color(UIColor.systemGray5))
-                        VStack{
-                            Text("5")
-                                .font(.system(size: 37))
-                            Text("JKL")
-                                .font(.system(size: 10))
-                        }
-                        
-                        
-                    }
-                    ZStack{
-                        Circle()
-                            .frame(width:78 ,height:78).foregroundColor(Color(UIColor.systemGray5))
-                        VStack{
-                            Text("6")
-                                .font(.system(size: 37))
-                            Text("MNO")
-                                .font(.system(size: 10))
-                        }
-                    }
+            KeyPadView()
+                .tabItem {
+                    Label("키패드", systemImage: "circle.grid.3x3.fill")
                 }
-            }
-            VStack(spacing: 18){
-                HStack(spacing: 24){
-                    ZStack{
-                        Circle()
-                            .frame(width:78 ,height:78)
-                            .foregroundColor(Color(UIColor.systemGray5))
-                        VStack{
-                            Text("7")
-                                .font(.system(size: 37))
-                            Text("PQRS")
-                                .font(.system(size: 10))
-                        }
-                        
-                    }
-                    ZStack{
-                        Circle()
-                            .frame(width:78 ,height:78)
-                            .foregroundColor(Color(UIColor.systemGray5))
-                        VStack{
-                            Text("8")
-                                .font(.system(size: 37))
-                            Text("TUV")
-                                .font(.system(size: 10))
-                        }
-                    }
-                    ZStack{
-                        Circle()
-                            .frame(width:78 ,height:78)
-                            .foregroundColor(Color(UIColor.systemGray5))
-                        VStack{
-                            Text("9")
-                                .font(.system(size: 37))
-                            Text("WXYZ")
-                                .font(.system(size: 10))
-                        }
-                        
-                    }
-                    
-                    
+            Text("음성 사수함")
+                .tabItem {
+                    Label("음성 사수함", systemImage: "recordingtape")
                 }
-                VStack(spacing: 19.5){
-                    HStack(spacing: 24){
-                        ZStack{
-                            Circle()
-                                .frame(width:78 ,height:78)
-                                .foregroundColor(Color(UIColor.systemGray5))
-                            Text("﹡")
-                                .font(.system(size: 50
-                                             ))
-                            
-                        }
-                        ZStack{
-                            Circle()
-                                .frame(width:78 ,height:78)
-                                .foregroundColor(Color(UIColor.systemGray5))
-                            VStack{
-                                Text("0")
-                                    .font(.system(size: 37))
-                                Text("+")
-                                    .font(.system(size: 14
-                                                ))
-                            }
-                        }
-                        ZStack{
-                            Circle()
-                                .frame(width:78 ,height:78)
-                                .foregroundColor(Color(UIColor.systemGray5))
-                            Text("#")
-                                .font(.system(size: 36))
-                            
-                        }
-                        
-                    }
-                    
-                    
-                    
-                    VStack{
-                       
-                            ZStack{
-                                Circle()
-                                    .frame(width:75,height:75)
-                                    .foregroundColor(Color.green)
-                                Image(systemName: "phone.fill")
-                                    .resizable()
-                                    .frame(width:38, height:42)
-                                    .foregroundColor(.white)
-                                
-                                
-                                
-                            }
-                        }
-                    }
-                }
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            .padding()
-        }
-        
-        
-        struct ContentView_Previews: PreviewProvider {
-            static var previews: some View {
-                ContentView()
-            }
         }
     }
     
-
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
+    
+    
+}

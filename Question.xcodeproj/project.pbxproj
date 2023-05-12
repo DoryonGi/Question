@@ -14,6 +14,8 @@
 		4061F6212A0C743C0076FEDC /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061F6202A0C743C0076FEDC /* QuestionTests.swift */; };
 		4061F62B2A0C743C0076FEDC /* QuestionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061F62A2A0C743C0076FEDC /* QuestionUITests.swift */; };
 		4061F62D2A0C743C0076FEDC /* QuestionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061F62C2A0C743C0076FEDC /* QuestionUITestsLaunchTests.swift */; };
+		4061F63A2A0DD5790076FEDC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061F6392A0DD5790076FEDC /* SwiftUIView.swift */; };
+		4061F63C2A0DDB110076FEDC /* KeyPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061F63B2A0DDB110076FEDC /* KeyPadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4061F6262A0C743C0076FEDC /* QuestionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4061F62A2A0C743C0076FEDC /* QuestionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUITests.swift; sourceTree = "<group>"; };
 		4061F62C2A0C743C0076FEDC /* QuestionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4061F6392A0DD5790076FEDC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		4061F63B2A0DDB110076FEDC /* KeyPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		4061F6032A0C743A0076FEDC = {
 			isa = PBXGroup;
 			children = (
+				4061F63B2A0DDB110076FEDC /* KeyPadView.swift */,
 				4061F60E2A0C743A0076FEDC /* Question */,
 				4061F61F2A0C743C0076FEDC /* QuestionTests */,
 				4061F6292A0C743C0076FEDC /* QuestionUITests */,
@@ -98,6 +103,7 @@
 				4061F6112A0C743A0076FEDC /* ContentView.swift */,
 				4061F6132A0C743C0076FEDC /* Assets.xcassets */,
 				4061F6152A0C743C0076FEDC /* Preview Content */,
+				4061F6392A0DD5790076FEDC /* SwiftUIView.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4061F63C2A0DDB110076FEDC /* KeyPadView.swift in Sources */,
 				4061F6122A0C743A0076FEDC /* ContentView.swift in Sources */,
 				4061F6102A0C743A0076FEDC /* QuestionApp.swift in Sources */,
+				4061F63A2A0DD5790076FEDC /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
